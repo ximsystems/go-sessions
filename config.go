@@ -3,7 +3,7 @@ package sessions
 import (
 	"time"
 
-	uuid "github.com/iris-contrib/go.uuid"
+	"github.com/gofrs/uuid"
 )
 
 const (
