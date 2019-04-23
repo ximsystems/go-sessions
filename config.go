@@ -3,7 +3,7 @@ package sessions
 import (
 	"time"
 
-	"github.com/iris-contrib/go.uuid"
+	uuid "github.com/iris-contrib/go.uuid"
 )
 
 const (
@@ -124,7 +124,7 @@ func (c Config) Validate() Config {
 
 	if c.SessionIDGenerator == nil {
 		c.SessionIDGenerator = func() string {
-			id, _ := uuid.NewV4()
+			id := uuid.NewV4()
 			return id.String()
 		}
 	}
