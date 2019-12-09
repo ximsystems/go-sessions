@@ -1,4 +1,4 @@
-module github.com/Lijmer/go-sessions
+module github.com/ximsystems/go-sessions
 
 go 1.12
 
